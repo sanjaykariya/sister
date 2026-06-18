@@ -47,8 +47,8 @@ p{
 /* Image */
 .photo{
     width:100%;
-    max-width:300px;
-    height:auto;
+    max-width:380px;
+    height:420px;
     border-radius:15px;
     margin:15px auto;
     display:block;
@@ -111,20 +111,32 @@ button:hover{
     from{transform:translateY(0);opacity:1;}
     to{transform:translateY(-120vh);opacity:0;}
 }
-@media (max-width:600px){
+/* MOBILE RESPONSIVE */
+@media (max-width:768px){
+
+    .container{
+        width:90%;
+        height:350px;
+        object-fit:cover;
+        padding:15px;
+    }
+
     h1{
-        font-size:20px;
+        font-size:22px;
     }
 
     p{
-        font-size:14px;
-    }
-
-    .container{
-        padding:15px;
+        font-size:15px;
     }
 
     button{
         width:100%;
+        font-size:16px;
+    }
+}
+@media (max-width:768px){
+
+    img{
+        max-width:90%;
     }
 }
